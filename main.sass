@@ -1,0 +1,31 @@
+$main: #343434
+$text: #fff
+$accent: #fff
+$color: #000
+
+*
+  margin: 0
+  padding: 0
+
+nav
+  position: fixed
+  background-color: $accent
+  width: 100vw
+  height: 4vh
+
+  ul
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+    li
+      list-style: none
+      a
+        @extend .no-decoration
+        color: $color
+
+body
+  background-color: $main
+
+.no-decoration
+  text-decoration: none

@@ -2,9 +2,9 @@
 <html dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title><script>document.write(loction.search.substr(1))</script></title>
+    <script>document.write('<title>' + (location.search.substr(1) || 'DATA') + '</title>')</script>
   </head>
-  <body>
-
+  <body style="width:100vw;height:100vh;padding:0;margin:0;overflow:hidden;">
+    <script>document.write('<iframe src="' + (location.hash.substr(1) || 'https://example.org/') + '" frameborder="0" style="width:100vw;height:100vh;"></iframe>')</script>
   </body>
 </html>
